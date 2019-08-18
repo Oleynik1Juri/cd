@@ -13,8 +13,11 @@
                 <GradientStop Color="#FFDE1414" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBox HorizontalAlignment="Left" Height="37" Margin="197,60,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="373" TextChanged="TextBox_TextChanged"/>
-        <Button Content="Show" HorizontalAlignment="Left" Margin="318,254,0,0" VerticalAlignment="Top" Width="373" Height="90" Click="Button_Click" BorderBrush="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}" FontFamily="Stencil" FontSize="48">
+        <TextBox Name="txtBx1" HorizontalAlignment="Left" Height="70" Margin="41,68,0,0" TextWrapping="Wrap" 
+                 Text="TextBox" VerticalAlignment="Top" Width="260"/>
+        <Button Content="Show" HorizontalAlignment="Left" Margin="200,239,0,0" VerticalAlignment="Top" 
+                Width="388" Height="135" Click="Button_Click" 
+                BorderBrush="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}" FontFamily="Stencil" FontSize="48">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF3F3F3" Offset="0"/>
@@ -24,6 +27,9 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <TextBox Name="txtBx2" IsReadOnly="True" HorizontalAlignment="Left"
+                 Height="66" Margin="502,72,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="253"
+                 RenderTransformOrigin="0.64,-0.199"/>
 
     </Grid>
 </Window>
