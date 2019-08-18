@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewWPEApplication", "NewWPEApplication\NewWPEApplication.csproj", "{C945732D-567F-493B-8824-47828EFB21CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C945732D-567F-493B-8824-47828EFB21CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C945732D-567F-493B-8824-47828EFB21CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C945732D-567F-493B-8824-47828EFB21CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C945732D-567F-493B-8824-47828EFB21CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C38EC15C-7EB6-43CD-BB2A-F53BA5D02CCD}
+	EndGlobalSection
+EndGlobal
