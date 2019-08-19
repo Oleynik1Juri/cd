@@ -56,6 +56,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Sbyte";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button3
             // 
@@ -65,6 +66,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Short";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // button4
             // 
@@ -74,6 +76,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Ushort";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // button5
             // 
@@ -83,6 +86,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Int";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // button6
             // 
@@ -92,6 +96,7 @@
             this.button6.TabIndex = 5;
             this.button6.Text = "Uint";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // button7
             // 
@@ -101,6 +106,7 @@
             this.button7.TabIndex = 6;
             this.button7.Text = "Long";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.Button7_Click);
             // 
             // button8
             // 
@@ -110,6 +116,7 @@
             this.button8.TabIndex = 7;
             this.button8.Text = "Ulong";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.Button8_Click);
             // 
             // Form1
             // 
