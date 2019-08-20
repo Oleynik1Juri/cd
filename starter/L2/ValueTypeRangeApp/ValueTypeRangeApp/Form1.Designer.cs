@@ -122,7 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(272, 371);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -132,8 +132,9 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "ValueType Range ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
