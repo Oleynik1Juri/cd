@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace Computing_Integer_Arguments_v._7._1
 {
     class Program
@@ -7,21 +6,21 @@ namespace Computing_Integer_Arguments_v._7._1
         static void Main(string[] args)
         {
             int a, b, c;
-            Console.ForegroundColor = System.ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("First number - ");
             int.TryParse(Console.ReadLine(), out a);
             Console.Write("Second number - ");
             int.TryParse(Console.ReadLine(), out b);
-            Console.ForegroundColor = System.ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Third number - ");
             int.TryParse(Console.ReadLine(), out c);
-            Console.ForegroundColor = System.ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Green;
             Calculate(a, b, c);
         }
 
         static void Calculate(int a, int b, int c)
         {
-            Console.ForegroundColor = System.ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Arithmetic mean of argument values: = " + ((a + b + c) / 3).ToString());
             Console.ReadKey();
         }
