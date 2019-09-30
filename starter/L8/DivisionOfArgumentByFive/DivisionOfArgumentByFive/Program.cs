@@ -18,27 +18,33 @@ namespace DivisionOfArgumentByFive
 
         static void Calculate(int number1, int numberb2, int number3)
         {
-            if (number1 % 5 == 0) // Если number1 остаток % равно 0; 
-
-                Console.WriteLine($"First number={number1/5}"); // то number1 делится на 5 
+            if (number1%5==0)
+            {
+                Console.WriteLine($"First number={number1/5}"); 
+            }
             else
             {
-                Console.WriteLine("Error the first number is not divisible by 5"); // если остаток не равно 0, то Error
+                Console.WriteLine("Error the first number is not divisible by 5"); 
             }
-            if (numberb2 % 5 == 0)
 
-                Console.WriteLine($"Second number={numberb2 / 5}");
+            if (numberb2%5==0)
+            {
+                Console.WriteLine($"Second number={numberb2/5}");
+            }
             else
             {
                 Console.WriteLine("Error the second number is not divisible by 5");
             }
-            if (number3 % 5 == 0)
 
-                Console.WriteLine($"Third number={number3 / 5}");
+            if (number3%5==0)
+            {
+                Console.WriteLine($"Third number={number3/5}");
+            }
             else
             {
                 Console.WriteLine("Error the third number is not divisible by 5");
             }
+            
             Console.ReadKey();
         }
     }
