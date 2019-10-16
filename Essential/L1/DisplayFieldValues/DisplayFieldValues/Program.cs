@@ -11,7 +11,7 @@ namespace DisplayFieldValues
         private string _house;
         private string _apartment;
 
-        public string Index
+        public string Index 
         {
             set
             {
