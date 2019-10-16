@@ -2,109 +2,108 @@
 
 namespace DisplayFieldValues
 {
-    internal class Address // Создать класс с именем Address.
+    class Address
     {
-        private string Index; //+ 
-        private string Country; //+
-        private string City; //+               -  В теле класса требуется создать поля: index, country, city, street, house, apartment.  
-        private string Street; //+
-        private string House; //+
-        private string Apartement; //+
+        private string _index;
+        private string _country;
+        private string _city;
+        private string _street;
+        private string _house;
+        private string _apartment;
 
-        /////////////////////////////////////////////
-        public void SetIndex(string value)     //   Для каждого поля, создать свойство с двумя методами доступа Set(setter/Get(getter).
+        public string Index
         {
-            Index = value;
+            set
+            {
+                _index = value;
+            }
+
+            get
+            {
+                return _index;
+            }
         }
-
-        public string GetIndex()
+        public string Country
         {
-            return Index;
+            set
+            {
+                _country = value;
+            }
+
+            get
+            {
+                return _country;
+            }
         }
-
-/////////////////////////////////////////////
-        public void SetCountry(string value)
+        public string City
         {
-            Country = value;
+            set
+            {
+                _city = value;
+            }
+
+            get
+            {
+                return _city;
+            }
         }
-
-        public string GetCountry()
+        public string Street
         {
-            return Country;
+            set
+            {
+                _street = value;
+            }
+
+            get
+            {
+                return _street;
+            }
         }
-
-//////////////////////////////////////////////
-        public void SetCity(string value)
+        public string House
         {
-            City = value;
+            set
+            {
+                _house = value;
+            }
+
+            get
+            {
+                return _house;
+            }
         }
-
-        public string GetCity()
+        public string Apartment
         {
-            return City;
-        }
+            set
+            {
+                _apartment = value;
+            }
 
-///////////////////////////////////////
-        public void SetStreet(string value)
-        {
-            Street = value;
-        }
-
-        public string GetStreet()
-        {
-            return Street;
-        }
-
-/////////////////////////////////////
-        public void SetHouse(string value)
-        {
-            House = value;
-        }
-
-        public string GetHouse()
-        {
-            return House;
-        }
-
-////////////////////////////////////////
-        public void SetApartement(string value)
-        {
-            Apartement = value;
-        }
-
-        public string GetApartement()
-        {
-            return Apartement;
+            get
+            {
+                return _apartment;
+            }
         }
     }
-/////////////////////////////////////////
-    internal class Program
+    class Program
     {
         static void Main()
         {
-            Address info = new Address();        //Создать экземпляр класса Address.
+            Address info = new Address();
 
-            info.SetIndex("Index - 00707");
-            info.SetCountry("Country - UA");
-            info.SetCity("City - Berdichev");          // В поля экземпляра записать информацию о почтовом адресе.  
-            info.SetStreet("Street - Kotovskogo");
-            info.SetHouse("House - 77");
-            info.SetApartement("Apartement - 7");
+            info.Index = "Index - 00707";
+            Console.WriteLine(info.Index);
+            info.Country = "Country - UA";
+            Console.WriteLine(info.Country);
+            info.City = "City - Berdichev";
+            Console.WriteLine(info.City);
+            info.Street = "Street - Kotovskogo";
+            Console.WriteLine(info.Street);
+            info.House = "House - 77";
+            Console.WriteLine(info.House);
+            info.Apartment = "Apartement - 7";
+            Console.WriteLine(info.Apartment);
 
-            string Index = info.GetIndex();  // Выведите на экран значения полей, описывающих адрес.
-            Console.WriteLine(Index);
-            string Country = info.GetCountry();
-            Console.WriteLine(Country);
-            string City = info.GetCity();
-            Console.WriteLine(City);
-            string Street = info.GetStreet();
-            Console.WriteLine(Street);
-            string House = info.GetHouse();
-            Console.WriteLine(House);
-            string Apartement = info.GetApartement();
-            Console.WriteLine(Apartement);
-            Console.ReadLine(); // зад. эк.
+            Console.ReadKey();
         }
     }
 }
-
