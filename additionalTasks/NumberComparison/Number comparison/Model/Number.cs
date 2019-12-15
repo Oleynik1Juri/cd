@@ -28,5 +28,14 @@ namespace Number_comparison.Model
         {
             return 2;
         }
+        public int IncrementPrefix(int x, int y)
+        {
+            return 6;
+        }
+        public int PostfixIncrement(int x, int y)
+        {
+            return 4;
+        }
     }
+
 }

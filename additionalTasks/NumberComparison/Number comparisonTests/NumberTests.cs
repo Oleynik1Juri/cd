@@ -57,7 +57,26 @@ namespace Number_comparisonTests
             int actual = c.ReceiptOfBalance( x,  y);
             Assert.AreEqual(2,actual);
         }
-        
+        [TestMethod]
+        public void IncrementPrefix()
+        {
+            int x = 5;
+            int y = ++x;
+            int expected = 6;
+            Number c = new Number();
+            int actual = c.IncrementPrefix(x, y);
+            Assert.AreEqual(6, actual);
+        }
+        [TestMethod]
+        public void PostfixIncrement()
+        {
+            int x = 5;
+            int y = --x;
+            int expected = 4;
+            Number c = new Number();
+            int actual = c.PostfixIncrement(x, y);
+            Assert.AreEqual(4, actual);
+        }
     }
 }
 
