@@ -47,6 +47,17 @@ namespace Number_comparisonTests
             int actual = c.Divisions(x, y);
             Assert.AreEqual(6, actual);
         }
+        [TestMethod]
+        public void ReceiptOfBalance_10adb4_returned()
+        {
+            double x = 10.0;
+            double y = 4.0;
+            int expected = 2;
+            Number c = new Number();
+            int actual = c.ReceiptOfBalance( x,  y);
+            Assert.AreEqual(2,actual);
+        }
+        
     }
 }
 

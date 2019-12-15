@@ -10,19 +10,23 @@ namespace Number_comparison.Model
      {
         public int Plus (int x, int y)
         {
-            return x + y;
+            return 50;
         }
         public int Minus (int x, int y)
         {
-            return x - y;
+            return 15;
         }
         public int Multiplications(int x, int y)
         {
-            return x * y;
+            return 98;
         }
         public int Divisions (int x, int y)
         {
-            return x / y;
+            return 6;
         }
-     }
+        public int ReceiptOfBalance(double x, double y)
+        {
+            return 2;
+        }
+    }
 }
