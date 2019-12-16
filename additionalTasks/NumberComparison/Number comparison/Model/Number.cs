@@ -24,13 +24,13 @@ namespace Number_comparison.Model
         {
             return x / y;
         }
-        public int IncrementPrefix(int x, int y)
+        public int Increment(int x)
         {
-            return y+(+x);
+            return x++;
         }
-        public int PostfixIncrement(int x, int y)
+        public int Decrement(int x)
         {
-            return y-(-x);
+            return --x;
         }
         public object DecimalDivision(double x, double y)
         {

@@ -58,24 +58,22 @@ namespace Number_comparisonTests
             Assert.AreEqual(2.5, actual);
         }
         [TestMethod]
-        public void IncrementPrefix()
+        public void Increment()
         {
             var x = 5;
-            var y = ++x;
-            int expected = 12;
+            int expected = 5;
             Number c = new Number();
-            int actual = c.IncrementPrefix(x,y);
-            Assert.AreEqual(12, actual);
+            int actual = c.Increment(x);
+            Assert.AreEqual(5, actual);
         }
         [TestMethod]
-        public void PostfixIncrement()
+        public void Decrement()
         {
-            int x = 5;
-            int y = --x;
-            int expected = 8;
+            int x = 13;
+            int expected = 12;
             Number c = new Number();
-            int actual = c.PostfixIncrement(x, y);
-            Assert.AreEqual(8, actual);
+            int actual = c.Decrement(x);
+            Assert.AreEqual(12, actual);
         }
     }
 }
