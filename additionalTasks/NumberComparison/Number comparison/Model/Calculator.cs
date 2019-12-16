@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.InteropServices;
 
 namespace Number_comparison.Model
 {
-     public class Number
+     public class Calculator
      {
         public int Sum (int x, int y)
         {
@@ -20,10 +16,11 @@ namespace Number_comparison.Model
         {
             return x * y;
         }
-        public int DivisionByZero(int x, int y)
+        public int Division(int x, int y)
         {
-            return x / y;
+            return x / y; 
         }
+
         public int Increment(int x)
         {
             return x++;
@@ -32,10 +29,11 @@ namespace Number_comparison.Model
         {
             return --x;
         }
-        public object DecimalDivision(double x, double y)
-        {
+       public double DecimalDivision(double x, double y)
+       {
             return x / y;
-        }
+       }
+
      }
 
 }
