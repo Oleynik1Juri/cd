@@ -8,34 +8,34 @@ namespace Number_comparison.Model
 {
      public class Number
      {
-        public int Plus (int x, int y)
+        public int Sum (int x, int y)
         {
-            return 50;
+            return x + y;
         }
-        public int Minus (int x, int y)
+        public int Sub(int x, int y)
         {
-            return 15;
+            return x - y;
         }
         public int Multiplications(int x, int y)
         {
-            return 98;
+            return x * y;
         }
-        public int Divisions (int x, int y)
+        public int DivisionByZero(int x, int y)
         {
-            return 6;
-        }
-        public int ReceiptOfBalance(double x, double y)
-        {
-            return 2;
+            return x / y;
         }
         public int IncrementPrefix(int x, int y)
         {
-            return 6;
+            return y+(+x);
         }
         public int PostfixIncrement(int x, int y)
         {
-            return 4;
+            return y-(-x);
         }
-    }
+        public object DecimalDivision(double x, double y)
+        {
+            return x / y;
+        }
+     }
 
 }

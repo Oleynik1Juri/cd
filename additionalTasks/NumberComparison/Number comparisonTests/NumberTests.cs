@@ -8,23 +8,23 @@ namespace Number_comparisonTests
     public class NumberTests
     {
         [TestMethod]
-        public void Plus_20and30_50returned()
+        public void Sum_20and30_50returned()
         {
             int x = 20;
             int y = 30;
             int expected = 50;
             Number c = new Number();
-            int actual = c.Plus(x, y);
+            int actual = c.Sum(x,y);
             Assert.AreEqual(50, actual);
         }
         [TestMethod]
-        public void Minus_20and_5_returned()
+        public void Sub_20and_5_returned()
         {
             int x = 20;
             int y = 5;
             int expected = 15;
             Number c = new Number();
-            int actual = c.Minus(x, y);
+            int actual = c.Sub(x,y);
             Assert.AreEqual(15, actual);
         }
         [TestMethod]
@@ -34,48 +34,48 @@ namespace Number_comparisonTests
             int y = 7;
             int expected = 98;
             Number c = new Number();
-            int actual = c.Multiplications(x, y);
+            int actual = c.Multiplications(x,y);
             Assert.AreEqual(98, actual);
         }
         [TestMethod]
-        public void Divisions_12and2_6returned()
+        public void DivisionByZero_12and2_6returned()
         {
-            int x = 12;
+            int x = 12; // /0
             int y = 2;
             int expected = 6;
             Number c = new Number();
-            int actual = c.Divisions(x, y);
+            int actual = c.DivisionByZero(x,y);
             Assert.AreEqual(6, actual);
         }
         [TestMethod]
-        public void ReceiptOfBalance_10adb4_returned()
+        public void DecimalDivision_10adb4_returned()
         {
-            double x = 10.0;
-            double y = 4.0;
-            int expected = 2;
+            var x = 10.0;
+            var y = 4.0;
+            double expected = 2.5;
             Number c = new Number();
-            int actual = c.ReceiptOfBalance( x,  y);
-            Assert.AreEqual(2,actual);
+            var actual = c.DecimalDivision(x,y);
+            Assert.AreEqual(2.5, actual);
         }
         [TestMethod]
         public void IncrementPrefix()
         {
-            int x = 5;
-            int y = ++x;
-            int expected = 6;
+            var x = 5;
+            var y = ++x;
+            int expected = 12;
             Number c = new Number();
-            int actual = c.IncrementPrefix(x, y);
-            Assert.AreEqual(6, actual);
+            int actual = c.IncrementPrefix(x,y);
+            Assert.AreEqual(12, actual);
         }
         [TestMethod]
         public void PostfixIncrement()
         {
             int x = 5;
             int y = --x;
-            int expected = 4;
+            int expected = 8;
             Number c = new Number();
             int actual = c.PostfixIncrement(x, y);
-            Assert.AreEqual(4, actual);
+            Assert.AreEqual(8, actual);
         }
     }
 }
