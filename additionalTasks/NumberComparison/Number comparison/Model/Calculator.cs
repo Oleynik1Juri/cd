@@ -35,5 +35,4 @@ namespace Number_comparison.Model
        }
 
      }
-
 }
