@@ -1,7 +1,7 @@
 ﻿using System;
 
-namespace FillingOutTheQuestionnaireApp.UserInformation
-{
+namespace FillingOutTheQuestionnaireApp.Model
+{ 
     partial class User
     {
         public string Login { get; set; }

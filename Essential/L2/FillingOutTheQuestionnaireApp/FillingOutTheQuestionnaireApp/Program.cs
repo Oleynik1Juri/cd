@@ -1,5 +1,5 @@
 ﻿using System;
-using FillingOutTheQuestionnaireApp.UserInformation;
+using FillingOutTheQuestionnaireApp.Model;
 
 namespace FillingOutTheQuestionnaireApp
 {
