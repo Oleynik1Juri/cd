@@ -13,14 +13,13 @@ namespace FillingOutTheQuestionnaireApp
                 Name = "MyName",
                 Surname = "MySurname",
                 Age = "MyAge",
-                Data = "28.12.2019"
             };
 
             Console.WriteLine(user.Login);
             Console.WriteLine(user.Name);
             Console.WriteLine(user.Surname);
             Console.WriteLine(user.Age);
-            Console.WriteLine(user.Data);
+            Console.WriteLine(DateTime.Now);
 
             Console.ReadKey();
         }
