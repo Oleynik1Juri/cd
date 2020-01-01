@@ -5,6 +5,7 @@ namespace CurrencyConverter
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
