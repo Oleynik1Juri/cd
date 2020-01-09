@@ -1,8 +1,15 @@
-﻿Задание 2 
-	+ Создайте проект по шаблону Console Application. 
-		Требуется: 
-			+ Создать класс Converter. 
-			- В теле класса создать пользовательский конструктор, который принимает три вещественных аргумента, и инициализирует поля соответствующие курсу 3-х основных валют, 
-	по отношению к гривне - public Converter(double usd, double eur, double rub). 
-			- Написать программу, которая будет выполнять конвертацию из гривны в одну из указанных валют, также программа должна производить конвертацию из указанных валют в гривну. 
+﻿	1. Required to complete:
+		+ Create a project using the Console Application template.
+		+ Create a Converter class.
+		+ In the body of the class, create a custom constructor that takes three real arguments and initializes the fields corresponding to the exchange rate of 3 major currencies.
+			+ Converter_usd;
+			+ Converter_eur;
+			+ Converter_rub.
+		+ As a result, upon completion, the program should convert from the indicated currencies to hryvnia.
+	2. It is required to fulfill:
+		+ Create a new ConverterTests project.
+			+ Check by tests:
+			+ ConverterUA_v_USD;
+			+ ConverterUA_v_EUR;
+			+ ConverterUA_v_RUB.
 
