@@ -47,6 +47,11 @@
   <ItemGroup>
     <Content Include="ReadMe.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\FillingOutTheQuestionnaireTests\FillingOutTheQuestionnaireTests.csproj">
+      <Project>{92438332-0105-40ac-83c0-699eff76e1ce}</Project>
+      <Name>FillingOutTheQuestionnaireTests</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

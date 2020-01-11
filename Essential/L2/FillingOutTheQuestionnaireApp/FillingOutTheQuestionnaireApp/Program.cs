@@ -3,9 +3,9 @@ using FillingOutTheQuestionnaireApp.Model;
 
 namespace FillingOutTheQuestionnaireApp
 {
-    class Program
+    public class Program
     {
-        static void Main()
+        private static void Main()
         {
             var user = new User
             {
@@ -15,10 +15,7 @@ namespace FillingOutTheQuestionnaireApp
                 Age = "MyAge",
             };
 
-            Console.WriteLine(user.Login);
-            Console.WriteLine(user.Name);
-            Console.WriteLine(user.Surname);
-            Console.WriteLine(user.Age);
+            Console.WriteLine(user);
             Console.WriteLine(DateTime.Now);
 
             Console.ReadKey();
