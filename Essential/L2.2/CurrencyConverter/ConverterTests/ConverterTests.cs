@@ -18,7 +18,7 @@ namespace ConverterTests
         public void ConverterUA_v_USD()
         {
             double actual = _target.ConverterUA_v_USD(23);
-            Assert.AreEqual(1,actual);
+            Assert.AreEqual(6,actual);
         }
 
         [TestMethod]
