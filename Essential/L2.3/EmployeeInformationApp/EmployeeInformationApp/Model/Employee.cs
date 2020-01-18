@@ -13,6 +13,13 @@ namespace EmployeeInformationApp.Model
             _surname = surname;
             _startWorkingDate = startWorkingDate;
         }
+        private enum Profession
+        {
+            Junion,
+            Middel,
+            Senior
+        }
+
         public double TotalSalary()
         {
             var totalSalary = (1000 + 365) * 0.195;
