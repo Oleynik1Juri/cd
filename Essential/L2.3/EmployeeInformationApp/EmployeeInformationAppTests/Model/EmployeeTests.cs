@@ -1,4 +1,5 @@
-﻿using EmployeeInformationApp.Model;
+﻿using System;
+using EmployeeInformationApp.Model;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EmployeeInformationAppTests.Model
@@ -11,14 +12,22 @@ namespace EmployeeInformationAppTests.Model
         [TestInitialize]
         public void Init()
         {
-            _target = new Employee("name","surname");
+            _target = new Employee("Ogle","Vandal");
         }
-
+        
         [TestMethod]
         public void TotalSalaryTest()
         {
             var actual = _target.TotalSalary();
-            Assert.AreEqual(266.175, actual);
+            Assert.AreEqual(266, actual);
         }
+
+       [TestMethod]
+
+        public void StartWorkingDateTest()
+        {
+            var actual = _target.ToString();
+        }
+
     }
 }

@@ -15,4 +15,7 @@
 			
 			- Написать программу, которая выводит на экран информацию о сотруднике (фамилия, имя, должность), оклад и налоговый сбор
 
-			
+			  // public DateTime startWorkingDate = new DateTime(2020, 10, 10);
+			 //   Console.WriteLine(thisDate.ToString("d", fmt));
+			//DateTime _startWorkingDate = new DateTime(2020, 20, 20);
+           //private DateTimeFormatInfo _fmt = (new CultureInfo("hr-HR")).DateTimeFormat;
