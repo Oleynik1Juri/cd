@@ -6,9 +6,7 @@ namespace EmployeeInformationApp.Model
     {
         private readonly string _name;
         private readonly string _surname;
-        private readonly DateTime _startWorkingDate;
-        public string _employee1 { get; }
-
+        public string _employee { get; }
 
         public Employee(string name, string surname)
         {
@@ -19,10 +17,9 @@ namespace EmployeeInformationApp.Model
         
         public DateTime StartWorkingDate = new DateTime(2020, 10, 10);
 
-
         public Employee(string employee)
         {
-            this._employee1 = employee;
+            _employee = employee;
         }
 
         public override string ToString()

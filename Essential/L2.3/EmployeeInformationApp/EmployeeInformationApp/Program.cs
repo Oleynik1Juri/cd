@@ -10,19 +10,7 @@ namespace EmployeeInformationApp
         {
             
             Employee employee = new Employee("Oleg","Vardo");
-            
-
-            Console.WriteLine();
-            Console.WriteLine(employee.ToString());
-            
-            
-            //Console.WriteLine(employee.StartWorkingDate);
-            //Console.Write(employee.TotalSalary());
-            Console.WriteLine();
-          
-
-
-
+            Console.WriteLine(DateTime.Now.ToString("dd MMMM yyyy"));
             Console.ReadKey();
         }
 
