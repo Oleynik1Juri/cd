@@ -17,9 +17,10 @@ namespace EmployeeInformationApp.Model
 
         public enum Position
         {
-            Junion = 2000,
-            Middel = 3000,
-            Senior = 4000
+            Junion,
+            Middel,
+            Senior
         }
+
    }
 }   
