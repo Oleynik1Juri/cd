@@ -21,15 +21,16 @@ namespace EmployeeInformationAppTests.Model
         public void TotalSalaryTest()
         {
             var actual = _target.TotalSalary();
-            Assert.AreEqual(266, actual);
+            Assert.AreEqual(2021, actual);
         }
 
        [TestMethod]
 
-        public void StartWorkingDateTest()
+        public void ToStringTest()
         {
             var actual = _target.ToString();
+            Assert.AreEqual("name: Ogle, surname: Vandal, profession: Junior", actual);
         }
-
+        
     }
 }

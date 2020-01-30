@@ -24,9 +24,7 @@ namespace EmployeeInformationApp.Model
 
         public override string ToString()
         {
-            //return $"{nameof(_name)}: {_name}, {nameof(_surname)}: {_surname}, {nameof(_profession)}: {_profession}";
             return $"name: {_name}, surname: {_surname}, profession: {_profession}";
-
         }
     }
 }

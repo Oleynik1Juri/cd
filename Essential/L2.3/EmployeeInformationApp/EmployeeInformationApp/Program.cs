@@ -8,9 +8,8 @@ namespace EmployeeInformationApp
     {
         private static void Main()
         {
-            var employee = new Employee("Oleg","Vardo",Position.Junior);
-            //var employee = new Employee("Oleg", "Vardo", " ","");
-            Console.WriteLine(DateTime.Now.ToString("dd MMMM yyyy"));
+            var employee = new Employee("Ogle","Var-do",Position.Junior);
+            Console.WriteLine(DateTime.Now.ToString("dd.MM.yyyy"));
             Console.WriteLine(employee.ToString());
             Console.Write("Salary: ");
             Console.Write(employee.TotalSalary());
