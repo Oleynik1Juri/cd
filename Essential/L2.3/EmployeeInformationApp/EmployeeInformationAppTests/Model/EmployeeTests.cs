@@ -31,6 +31,8 @@ namespace EmployeeInformationAppTests.Model
             var actual = _target.ToString();
             Assert.AreEqual("name: Ogle, surname: Vandal, profession: Junior", actual);
         }
+
+
         
     }
 }

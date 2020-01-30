@@ -12,10 +12,13 @@
 			# Стаж (experience)
 			# Hалоговый збор (TaxFence)
 			# Общая зарплата (TotalSalary)
-			
-			- Написать программу, которая выводит на экран информацию о сотруднике (фамилия, имя, должность), оклад и налоговый сбор
 
-			  // public DateTime startWorkingDate = new DateTime(2020, 10, 10);
-			 //   Console.WriteLine(thisDate.ToString("d", fmt));
-			//DateTime _startWorkingDate = new DateTime(2020, 20, 20);
-           //private DateTimeFormatInfo _fmt = (new CultureInfo("hr-HR")).DateTimeFormat;
+	- В EmployeeTest создать метод GetSalaryTest.
+	- В методе GetSalaryTest проверить результат зарплаты.
+	- Создать класс Accountant(Бухгалтер):
+		- в теле класса поместить налоговый сбор TaxFence;
+		- Создать конструктор класса Accountant.
+		- Добавить метод GetSalary и передать его в класс Employee для расчёта зарплаты.
+
+			   		 	  
+- Написать программу, которая выводит на экран информацию о сотруднике (фамилия, имя, должность), оклад и налоговый сбор.
