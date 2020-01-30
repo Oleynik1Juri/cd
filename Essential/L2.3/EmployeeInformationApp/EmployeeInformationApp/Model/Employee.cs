@@ -6,24 +6,27 @@ namespace EmployeeInformationApp.Model
     {
         private readonly string _name;
         private readonly string _surname;
-        private readonly string _profession;
+        private readonly Position _profession;
+        
 
-        public Employee(string name, string surname, string profession)
+        public Employee(string name, string surname,Position profession)
         {
             _name = name;
             _surname = surname;
             _profession = profession;
         }
-
-        public override string ToString()
-        {
-            return "Employee: "+" " + _name +" "+ _surname + _profession;
-        }
-
+        
         public double TotalSalary()
         {
             var totalSalary = Math.Round( (10000 + 365) * 0.195);
             return totalSalary;
+        }
+
+        public override string ToString()
+        {
+            //return $"{nameof(_name)}: {_name}, {nameof(_surname)}: {_surname}, {nameof(_profession)}: {_profession}";
+            return $"name: {_name}, surname: {_surname}, profession: {_profession}";
+
         }
     }
 }

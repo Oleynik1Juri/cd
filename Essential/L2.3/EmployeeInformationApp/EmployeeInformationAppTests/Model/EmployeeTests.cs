@@ -8,13 +8,13 @@ namespace EmployeeInformationAppTests.Model
     public class EmployeeTests
     {
         private Employee _target;
-        //private Profession _target1;
+        
 
         [TestInitialize]
         public void Init()
         {
-            _target = new Employee("Ogle","Vandal","");
-           // _target1= new Profession("","","");
+            _target = new Employee("Ogle", "Vandal", Position.Junior);
+            
         }
         
         [TestMethod]
@@ -31,10 +31,5 @@ namespace EmployeeInformationAppTests.Model
             var actual = _target.ToString();
         }
 
-        //[TestMethod]
-        //public void ProfessionTest()
-        //{
-         //   var actual = _target1.ToString();
-       // }
     }
 }

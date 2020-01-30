@@ -8,15 +8,13 @@ namespace EmployeeInformationApp
     {
         private static void Main()
         {
-
-            Employee employee = new Employee("Oleg", "Vardo", ":  Junior");
+            var employee = new Employee("Oleg","Vardo",Position.Junior);
+            //var employee = new Employee("Oleg", "Vardo", " ","");
             Console.WriteLine(DateTime.Now.ToString("dd MMMM yyyy"));
             Console.WriteLine(employee.ToString());
             Console.Write("Salary: ");
             Console.Write(employee.TotalSalary());
-            
             Console.ReadKey();
         }
-
     }
 }
