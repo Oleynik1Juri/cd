@@ -12,15 +12,16 @@ namespace EmployeeInformationAppTests.Model
         [TestInitialize]
         public void Init()
         {
-            _target = new Booker();
-
+            var taxFence = 0.195;
+            _target = new Booker(taxFence);
         }
         
         [TestMethod]
         public void GetSalaryTest()
         {
-            var actual = _target.GetSalary();
-            Assert.AreEqual(25000,actual);
+            var employee = new Employee("Ogle", "Vandal", Position.Junior);
+            var actual = _target.GetSalary(employee);
+            Assert.AreEqual(2021, actual);
         }
     }
 }

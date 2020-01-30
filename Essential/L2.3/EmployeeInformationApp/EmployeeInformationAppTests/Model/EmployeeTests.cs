@@ -9,12 +9,10 @@ namespace EmployeeInformationAppTests.Model
     {
         private Employee _target;
         
-
         [TestInitialize]
         public void Init()
         {
             _target = new Employee("Ogle", "Vandal", Position.Junior);
-            
         }
         
         [TestMethod]
@@ -25,14 +23,10 @@ namespace EmployeeInformationAppTests.Model
         }
 
        [TestMethod]
-
-        public void ToStringTest()
+       public void ToStringTest()
         {
             var actual = _target.ToString();
             Assert.AreEqual("name: Ogle, surname: Vandal, profession: Junior", actual);
         }
-
-
-        
     }
 }
