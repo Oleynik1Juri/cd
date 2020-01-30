@@ -1,5 +1,4 @@
-﻿using System;
-using EmployeeInformationApp.Model;
+﻿using EmployeeInformationApp.Model;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EmployeeInformationAppTests.Model
@@ -15,7 +14,7 @@ namespace EmployeeInformationAppTests.Model
             var taxFence = 0.195;
             _target = new Booker(taxFence);
         }
-        
+
         [TestMethod]
         public void GetSalaryTest()
         {

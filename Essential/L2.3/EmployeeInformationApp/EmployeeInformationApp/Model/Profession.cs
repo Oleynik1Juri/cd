@@ -3,7 +3,7 @@
     public enum Position
     {
         Junior = 10000,
-        Middle = 5000,
-        Senior = 7000
+        Middle = 50000,
+        Senior = 70000
     }
 }

@@ -9,11 +9,11 @@ namespace EmployeeInformationApp.Model
         {
             _taxFence = taxFence;
         }
-        
+
         public double GetSalary(Employee employee)
         {
-            var totalSalary = Math.Round( (employee.Salary + employee.Days) * _taxFence);
-            return totalSalary;
+            var salary = Math.Round((employee.Salary + employee.Days) * _taxFence);
+            return salary;
         }
     }
 }

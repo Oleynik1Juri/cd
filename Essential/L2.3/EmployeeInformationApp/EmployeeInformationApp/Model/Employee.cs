@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace EmployeeInformationApp.Model
+﻿namespace EmployeeInformationApp.Model
 {
     public class Employee
     {
@@ -18,12 +16,6 @@ namespace EmployeeInformationApp.Model
 
         public double Salary => (int)_profession;
         public int Days => 365;
-
-        public double TotalSalary()
-        {
-            var totalSalary = Math.Round( (10000 + 365) * 0.195);
-            return totalSalary;
-        }
 
         public override string ToString()
         {

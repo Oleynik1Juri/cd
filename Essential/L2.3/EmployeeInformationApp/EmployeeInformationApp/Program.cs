@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 using EmployeeInformationApp.Model;
 
 namespace EmployeeInformationApp
@@ -8,11 +7,10 @@ namespace EmployeeInformationApp
     {
         private static void Main()
         {
-            var employee = new Employee("Ogle","Var-do",Position.Junior);
+            var employee = new Employee("Ogle", "Var-do", Position.Junior);
             Console.WriteLine(DateTime.Now.ToString("dd.MM.yyyy"));
             Console.WriteLine(employee.ToString());
             Console.Write("Salary: ");
-            Console.Write(employee.TotalSalary());
             Console.ReadKey();
         }
     }
