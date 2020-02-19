@@ -1,4 +1,5 @@
-﻿using EmployeeInformationApp.Model;
+﻿using System;
+using EmployeeInformationApp.Model;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EmployeeInformationAppTests.Model
@@ -11,7 +12,7 @@ namespace EmployeeInformationAppTests.Model
         [TestInitialize]
         public void Init()
         {
-            _target = new Employee("Ogle", "Vandal", Position.Junior);
+            _target = new Employee("Ogle", "Vandal", Position.Junior, new DateTime(2000, 12, 31));
         }
 
         [TestMethod]
@@ -19,6 +20,13 @@ namespace EmployeeInformationAppTests.Model
         {
             var actual = _target.ToString();
             Assert.AreEqual("name: Ogle, surname: Vandal, profession: Junior", actual);
+        }
+
+        [TestMethod]
+        public void DateStartWorkTest()
+        {
+            var actual = _target.DateStartWork;
+            Assert.AreEqual("1987.12.31",actual);
         }
     }
 }

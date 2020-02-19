@@ -1,4 +1,6 @@
-﻿namespace EmployeeInformationApp.Model
+﻿using System;
+
+namespace EmployeeInformationApp.Model
 {
     public class Employee
     {
@@ -7,15 +9,18 @@
         private readonly Position _profession;
 
 
-        public Employee(string name, string surname, Position profession)
+        public Employee(string name, string surname, Position profession, DateTime dateStartWork)
         {
             _name = name;
             _surname = surname;
             _profession = profession;
+            DateStartWork = dateStartWork;
         }
 
-        public double Salary => (int)_profession;
-        public int Days => 365;
+        public DateTime DateStartWork { get; set; }
+
+        public double Salary { get; set; }
+        public int Position => (int) _profession;
 
         public override string ToString()
         {

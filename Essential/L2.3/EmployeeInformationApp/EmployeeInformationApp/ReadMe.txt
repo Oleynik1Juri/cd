@@ -14,6 +14,9 @@
 			# Hалоговый збор (TaxFence)
 			# Общая зарплата (TotalSalary)
 
+			//var ___ = DateTime.Now - dateStartWork;
+            //var ___ = ___.Days;
+
 	+ Создать класс Booker(Бухгалтер):
 	+ В теле класса Booker создать _taxFence и проинцилизировать его конструкторе.
 	+ В Booker создать метод GetSalary.

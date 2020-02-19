@@ -12,8 +12,14 @@ namespace EmployeeInformationApp.Model
 
         public double GetSalary(Employee employee)
         {
-            var salary = Math.Round((employee.Salary + employee.Days) * _taxFence);
+            var salary = Math.Round(employee.Salary + _taxFence * CalculatesNumberOfDays(employee.DateStartWork));
             return salary;
+        }
+
+        private int CalculatesNumberOfDays(DateTime dateStartWork)
+        {
+            var dateTimeSpan = DateTime.Now - dateStartWork;
+            return Convert.ToInt32(dateTimeSpan.TotalDays);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using EmployeeInformationApp.Model;
+﻿using System;
+using EmployeeInformationApp.Model;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EmployeeInformationAppTests.Model
@@ -18,9 +19,9 @@ namespace EmployeeInformationAppTests.Model
         [TestMethod]
         public void GetSalaryTest()
         {
-            var employee = new Employee("Ogle", "Vandal", Position.Junior);
+            var employee = new Employee("Ogle", "Vandal", Position.Junior, new DateTime(2000, 12, 31));
             var actual = _target.GetSalary(employee);
-            Assert.AreEqual(2021, actual);
+            Assert.AreEqual(13688, actual);
         }
     }
 }
