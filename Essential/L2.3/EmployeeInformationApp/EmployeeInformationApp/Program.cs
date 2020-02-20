@@ -7,12 +7,11 @@ namespace EmployeeInformationApp
     {
         private static void Main()
         {
-            var employee = new Employee("Ogle", "Var-do", Position.Junior,new DateTime(2000, 12, 31));
+            var employee = new Employee("Ogle", "Var-do", Position.Junior, new DateTime(2000, 12, 31));
             Console.WriteLine($"Info: {employee}");
-            Console.Write($"Salary: {employee.Salary}");
-            
-
-
+            var booker = new Booker();
+            booker.GetSalary(employee);
+            Console.Write($"Salary: {booker.GetSalary(employee)}");
             Console.ReadKey();
         }
     }

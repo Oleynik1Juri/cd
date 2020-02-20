@@ -26,7 +26,7 @@ namespace EmployeeInformationAppTests.Model
         public void DateStartWorkTest()
         {
             var actual = _target.DateStartWork;
-            Assert.AreEqual("1987.12.31",actual);
+            Assert.AreEqual("31.12.2000", actual);
         }
     }
 }

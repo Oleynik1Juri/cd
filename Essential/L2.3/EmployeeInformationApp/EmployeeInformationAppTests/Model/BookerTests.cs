@@ -21,7 +21,7 @@ namespace EmployeeInformationAppTests.Model
         {
             var employee = new Employee("Ogle", "Vandal", Position.Junior, new DateTime(2000, 12, 31));
             var actual = _target.GetSalary(employee);
-            Assert.AreEqual(13688, actual);
+            Assert.AreEqual(7991, actual);
         }
     }
 }

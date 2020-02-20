@@ -20,7 +20,8 @@ namespace EmployeeInformationApp.Model
         public DateTime DateStartWork { get; set; }
 
         public double Salary { get; set; }
-        public int Position => (int) _profession;
+
+        public int Position => (int)_profession;
 
         public override string ToString()
         {

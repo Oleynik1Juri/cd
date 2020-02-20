@@ -10,10 +10,15 @@ namespace EmployeeInformationApp.Model
             _taxFence = taxFence;
         }
 
+        public Booker()
+        {
+
+        }
+
         public double GetSalary(Employee employee)
         {
-            var salary = Math.Round(employee.Salary + _taxFence * CalculatesNumberOfDays(employee.DateStartWork));
-            return salary;
+            var salutatory = Math.Round(employee.Salary * _taxFence + employee.Position + CalculatesNumberOfDays(employee.DateStartWork));
+            return salutatory;
         }
 
         private int CalculatesNumberOfDays(DateTime dateStartWork)
