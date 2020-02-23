@@ -17,11 +17,14 @@ namespace EmployeeInformationApp.Model
 
         public double GetSalary(Employee employee)
         {
-            var salutatory = Math.Round(employee.Salary * _taxFence + employee.Position + CalculatesNumberOfDays(employee.DateStartWork));
+            var salary = employee.Salary;
+            var taxFence = _taxFence;
+            var position = employee.Position;
+            var salutatory = Math.Round(salary * taxFence + position + CalculatesNumberOfDays(employee.DateStartWork));
             return salutatory;
         }
 
-        private int CalculatesNumberOfDays(DateTime dateStartWork)
+        public int CalculatesNumberOfDays(DateTime dateStartWork)
         {
             var dateTimeSpan = DateTime.Now - dateStartWork;
             return Convert.ToInt32(dateTimeSpan.TotalDays);

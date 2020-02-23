@@ -23,5 +23,6 @@ namespace EmployeeInformationAppTests.Model
             var actual = _target.GetSalary(employee);
             Assert.AreEqual(7991, actual);
         }
+
     }
 }
