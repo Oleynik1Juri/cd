@@ -1,26 +1,26 @@
 ﻿using System;
 namespace ClassRoomInfoApp.Model
 {
-    class Pupil
+    internal class Pupil
     {
-        public void Study()
+        public virtual void Study()
         {
-
+            Console.WriteLine("Vova.Stydy()");
         }
 
-        public void Read()
+        public virtual void Read()
         {
-
+            Console.WriteLine("Vova.Read()");
         }
 
-        public void Write()
+        public virtual void Write()
         {
-
+            Console.WriteLine("Vova.Write()");
         }
 
-        public void Relax()
+        public virtual void Relax()
         {
-
+            Console.WriteLine("Vova.Relax()");
         }
 
     }

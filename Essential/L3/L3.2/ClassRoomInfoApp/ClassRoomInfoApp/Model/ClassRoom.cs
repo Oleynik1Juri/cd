@@ -5,5 +5,14 @@ namespace ClassRoomInfoApp.Model
 {
     class ClassRoom
     {
+        
+
+
+
+
+
+
+
+
     }
 }

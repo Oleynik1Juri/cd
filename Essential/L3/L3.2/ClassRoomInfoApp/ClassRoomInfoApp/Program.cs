@@ -1,4 +1,5 @@
 ﻿using System;
+using ClassRoomInfoApp.Model;
 
 namespace ClassRoomInfoApp
 {
@@ -6,6 +7,15 @@ namespace ClassRoomInfoApp
     {
         static void Main()
         {
+           Pupil pupil = new Pupil();
+
+           Console.WriteLine();
+            Console.ReadKey();
+
+
+
+
+
         }
     }
 }
