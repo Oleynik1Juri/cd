@@ -10,6 +10,14 @@ namespace Calculating_arithmetic_mean_of_values_App
     {
         static void Main(string[] args)
         {
+            int a = 10;
+            int b = 5;
+            int c = 10;
+
+            int resultant = (a + b + c) / 3;
+            Console.WriteLine("a = 10, b = 5, c = 10");
+            Console.WriteLine("Среднее арифметическое число = {0}", resultant);
+            Console.ReadKey();
         }
     }
 }
