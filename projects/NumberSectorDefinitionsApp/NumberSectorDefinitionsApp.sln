@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberSectorDefinitionsApp", "NumberSectorDefinitionsApp\NumberSectorDefinitionsApp.csproj", "{228E374F-C89E-447F-BFC1-0E09F647F566}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{228E374F-C89E-447F-BFC1-0E09F647F566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{228E374F-C89E-447F-BFC1-0E09F647F566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{228E374F-C89E-447F-BFC1-0E09F647F566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{228E374F-C89E-447F-BFC1-0E09F647F566}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B054794-9871-4287-8364-7208EA50B1DB}
+	EndGlobalSection
+EndGlobal
