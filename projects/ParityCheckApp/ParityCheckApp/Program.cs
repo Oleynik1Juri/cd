@@ -10,6 +10,22 @@ namespace ParityCheckApp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Введите число для проверки: ");
+            var namber = Convert.ToInt32(Console.ReadLine());
+
+            if (namber % 2 == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Вы ввели чётное число");
+            }
+
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Вы ввели нечётное число");
+            }
+
+            Console.ReadKey();
         }
     }
 }
